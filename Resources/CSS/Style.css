@@ -1,10 +1,12 @@
 
+/* NavBar */
 .navbar {
     background-color: #DFE8CC;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
 }
 
+/* Footer */
 .footer {
     background-color: #557153;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -28,21 +30,21 @@
 
 .footer .row a:hover {
     color:#fff;
-    }
+}
     
 .footer .row ul{
     width:100%;
-    }
+}
     
 .footer .row ul li {
     display:inline-block;
     margin:0px 30px;
-    }
+}
     
 .footer .row a i {
     font-size:2em;
     margin:0% 1%;
-    }
+}
 
 .footer p {
     color: #fff;
@@ -62,3 +64,102 @@
         margin:0% 3%;
         }
     }
+
+/* CARDS CSS */
+.container {
+    position: relative;
+}
+      
+      .container .card{
+        position: relative;
+        width: 320px;
+        height: 450px;
+        background: #3e4d3d;
+        border-radius: 20px;
+        overflow: hidden;
+      }
+      
+      .container .card:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #CCD6A6;
+        clip-path: circle(150px at 80% 20%);
+        transition: 0.5s ease-in-out;
+      }
+      
+      .container .card:after{
+        position: absolute;
+        top: 30%;
+        left: -20%;
+        color: rgba(255,255,25,0.05)
+      }
+      
+      .container .card .imgBx{
+        position: absolute;
+        top: 45%;
+        transform: translateY(-50%);
+        z-index: 10000;
+        width: 100%;
+        height: 220px;
+        transition: 0.5s;
+      }
+      
+      /*Borde sup*/
+      .container .card:hover .imgBx{
+        top: 5%;
+        transform: translateY(0%);
+          
+      }
+      
+      .container .card .imgBx img{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        /*Rotacion*/
+        transform: translate(-50%, -50%) rotate(-0deg);
+        width: 270px;
+      }
+      
+      .container .card .contentBx{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        transition: 1s;
+        z-index: 10;
+      }
+      
+      .container .card:hover .contentBx{
+        height: 210px;
+      }
+      
+      .container .card .contentBx h2{
+        position: relative;
+        color: #fff;
+        margin: 0;
+      }
+    
+      .container .card .contentBx a{
+        display: inline-block;
+        padding: 10px 20px;
+        background: #fff;
+        border-radius: 4px;
+        margin-top: 10px;
+        text-decoration: none;
+        color: #111;
+        transform: translateY(50px);
+        transition: 0.5s;
+        margin-top: 0;
+      }
+      
+      .container .card:hover .contentBx a{
+        opacity: 1;
+        transform: translateY(0px);
+        transition-delay: 0.75s;
+      }
+      
