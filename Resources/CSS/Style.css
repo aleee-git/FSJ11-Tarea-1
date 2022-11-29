@@ -1,3 +1,10 @@
+body {
+    background-color: #DAE2B6 !important;
+}
+
+#MyCard {
+    background-color: #F7EDDB;
+}
 
 /* NavBar */
 .navbar {
